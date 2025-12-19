@@ -1,83 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Laboratory Report</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f7;
-            margin: 0;
-            padding: 20px;
-        }
+---
 
-        .report {
-            background-color: white;
-            padding: 25px;
-            max-width: 800px;
-            margin: auto;
-            border-radius: 8px;
-            box-shadow: 0 0 10px gray;
-        }
+### **2. LaTeX Template** (for formal lab reports)
+```latex
+\documentclass{article}
+\usepackage{amsmath, graphicx, hyperref}
 
-        h1, h2 {
-            text-align: center;
-            color: #2c3e50;
-        }
+\title{Title of the Experiment}
+\author{Your Name}
+\date{DD/MM/YYYY}
 
-        hr {
-            margin: 20px 0;
-        }
+\begin{document}
 
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
+\maketitle
 
-        .label {
-            font-weight: bold;
-        }
-    </style>
-</head>
+\section*{Abstract}
+Summary of the experiment.
 
-<body>
+\section{Introduction}
+Theory and objectives.
 
-<div class="report">
+\section{Materials and Methods}
+Procedure and setup.
 
-    <h1>LABORATORY REPORT</h1>
-    <hr>
+\section{Results}
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Trial & Voltage (V) & Current (A) \\ \hline
+1 & 5.0 & 0.2 \\ \hline
+2 & 10.0 & 0.4 \\ \hline
+\end{tabular}
+\caption{Experimental Data}
+\end{table}
 
-    <p><span class="label">Experiment Title:</span> ________________________</p>
-    <p><span class="label">Subject:</span> ________________________</p>
-    <p><span class="label">Student Name:</span> ________________________</p>
-    <p><span class="label">Roll Number:</span> ________________________</p>
-    <p><span class="label">Class / Section:</span> ________________________</p>
-    <p><span class="label">Date:</span> ________________________</p>
+\section{Discussion}
+Analysis of results.
 
-    <hr>
+\section{Conclusion}
+Key takeaways.
 
-    <h2>Aim</h2>
-    <p>To study and perform the given experiment.</p>
+\begin{thebibliography}{9}
+\bibitem{ref1} Author, \textit{Title}, Journal, Year.
+\end{thebibliography}
 
-    <h2>Apparatus / Materials Required</h2>
-    <p>List of apparatus used in the experiment.</p>
-
-    <h2>Theory</h2>
-    <p>Explain the theory related to the experiment.</p>
-
-    <h2>Procedure</h2>
-    <p>Step-by-step procedure of the experiment.</p>
-
-    <h2>Observation</h2>
-    <p>Record the observations.</p>
-
-    <h2>Result</h2>
-    <p>The result obtained from the experiment.</p>
-
-    <h2>Conclusion</h2>
-    <p>Conclusion of the experiment.</p>
-
-</div>
-
-</body>
-</html>
+\end{document}
